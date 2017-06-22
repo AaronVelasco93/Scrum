@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/main.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <div class="container">
+        <div class="row">
+          <div class="col push-l3">
+            <img src="media/img/bienvenido.png">
+          </div>
+          <div class="col l12 push-l3">
+                <blockquote class="white-text" id="titulo">
+                  <h1>Calculadora Web</h1>
+                </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="margen">
+        <div class="row">
+          <div class="col s12 m5 l5 xl5">
+            <a class="waves-effect waves-light btn purple darken-1 pulse z-depth-4 boton" href="#modal1"><i class="material-icons left">book</i>Manual de Usuario</a>
+          </div>
+          <div class="col s12 m5 l5 xl5">
+            <a class="waves-effect waves-light btn purple darken-1 pulse z-depth-4 boton"><i class="material-icons right">add_box</i>Calculadora</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Estructura del Modal, para el manual de usuario -->
+      <div id="modal1" class="modal">
+        <div class="modal-content indigo">
+          <div class="indigo lighten-3 grey-text text-lighten-5">
+            <div class="container">
+              <img src="media/img/manual.png" alt="">
+              <div id="manualUsuario">
+                <h1>Manual de Usuario</h1>
+              </div>
+            </div>
+            <div class="container">
+              <div id="textoManual">
+                <p>Aquí va el texto para el manual de usuario</p>  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons right">close</i>Cerrar</a>
+        </div>
+      </div>      
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Import JS -->
+      <script type="text/javascript" src="js/calculadora.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- Methods for Jquery -->
+      <script>
+        $(document).ready(function(){
+          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+          $('.modal').modal();
+        });        
+      </script>
+    </body>
+  </html>

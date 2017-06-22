@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/calculadora.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <div id="caja1"><h2>Calculadora</h2></div>
+      <div class="container">
+        <div class="row">
+          <div id="calculadora">
+
+          <div id="operaciones">0</div>
+         
+          <ul>
+              <li onclick="operacion(this)">1</li>
+              <li onclick="operacion(this)">2</li>
+              <li onclick="operacion(this)">3</li>
+              <li onclick="digitos(this)">+</li>
+              
+              <li onclick="operacion(this)">4</li>
+              <li onclick="operacion(this)">5</li>
+              <li onclick="operacion(this)">6</li>
+              <li onclick="digitos(this)">-</li>
+             
+              <li onclick="operacion(this)">7</li>
+              <li onclick="operacion(this)">8</li>
+              <li onclick="operacion(this)">9</li>
+              <li onclick="digitos(this)">*</li>
+              
+              <li onclick="decimal()">.</li>
+              <li onclick="operacion(this)">0</li>
+              <li onclick="result()">=</li>
+              <li onclick="digitos(this)">/</li>   
+          </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col l4">
+                <a class="waves-effect waves-light btn purple darken-1 z-depth-4 boton" onclick="borrar()">Borrar</a>
+              </div>
+              <div class="col l4 push-l2">
+                <a class="waves-effect waves-light btn purple darken-1 z-depth-4 boton" onclick="cambiar()">Cambiar</a>
+              </div>              
+            </div>
+          </div>
+      </div>
+        </div>
+      </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- Import JS -->
+      <script type="text/javascript" src="js/calculadora.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    </body>
+  </html>

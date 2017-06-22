@@ -1,0 +1,27 @@
+body{
+	background-image: url('../media/img/fondo.jpg');
+	min-width: 10%;
+	overflow-x: hidden;
+}
+#titulo{
+	margin-top: -10%;
+	margin-left: 3%;
+}
+#margen{
+	padding: 5%;
+	padding-left: 17%;
+}
+.boton{
+	border-radius: 10px;
+}
+.boton:hover{
+	background-color: white !important;
+	color: #8e24aa !important;
+}
+#manualUsuario{
+	padding-left: 55%;
+	margin-top: -26%;
+}
+#textoManual{
+	margin-top: 15%;
+}
